@@ -18,7 +18,12 @@ Method: POST
 
 /user
 
-body-----> user_id, username, phone, balance
+body-----> {
+    "user_id": 4,
+    "username": "Samhita",
+    "phone": "71994", 
+    "balance": 3000
+}
 
 
 ---------------------------------------------
@@ -57,7 +62,10 @@ Method: PUT
 
 /addFunds
 
-body---------> user_id,amount
+body---------> {
+    "user_id": 4,
+    "amount": 12.23
+}
 
 
 -------------------------------------------------------
@@ -70,7 +78,10 @@ Method: PUT
 /spendFunds
 
 
-body---------> user_id,amount
+body---------> {
+    "user_id": 4,
+    "amount": 12.23
+}
 
 
 ---------------------------------------------------------
